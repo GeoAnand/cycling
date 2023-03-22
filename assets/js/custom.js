@@ -308,3 +308,18 @@ function scrollFunction() {
         scrollToTopBtn.style.opacity = "0";
     }
 }
+
+/* counter init with waypoint */
+    /* trigger waypoints on the element with class .stat_section */
+    const counterSection = document.querySelector('.stat_section');
+    if (counterSection) {
+        const counter = new Waypoint({
+            element: counterSection,
+            handler: function (direction) {
+                /* variable:class,duration time= default 5 (seconds) */
+                rdn_counter(".counter_text", 120);
+            },
+            offset: '75%',
+        })
+
+    }
