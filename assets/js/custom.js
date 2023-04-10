@@ -323,3 +323,100 @@ function scrollFunction() {
         })
 
     }
+
+    // lightbox
+
+    $(document).on("click", '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
+
+    // hide gallery
+
+    function togglePara() {
+        const secondPara = document.getElementById("second-para");
+        const readMoreBtn = document.querySelector(".dir-btn");
+      
+        if (secondPara.style.display === "block") {
+          secondPara.style.display = "none";
+          readMoreBtn.textContent = "Load More";
+        } else {
+          secondPara.style.display = "block";
+          readMoreBtn.textContent = "Load Less";
+        }
+      }
+
+    //   world heritage
+    function worldheritage() {
+        const secondPara = document.getElementById("world_heritage");
+        const readMoreBtn = document.querySelector(".wd-btn");
+      
+        if (secondPara.style.display === "block") {
+          secondPara.style.display = "none";
+          readMoreBtn.textContent = "Load More";
+        } else {
+          secondPara.style.display = "block";
+          readMoreBtn.textContent = "Load Less";
+        }
+      }
+
+    //   Madras Day
+    function madrasday() {
+        const secondPara = document.getElementById("madras_day");
+        const readMoreBtn = document.querySelector(".Madras-btn");
+      
+        if (secondPara.style.display === "block") {
+          secondPara.style.display = "none";
+          readMoreBtn.textContent = "Load More";
+        } else {
+          secondPara.style.display = "block";
+          readMoreBtn.textContent = "Load Less";
+        }
+      }
+
+      //   Book Launch
+    function booklaunch() {
+        const secondPara = document.getElementById("book_launch");
+        const readMoreBtn = document.querySelector(".bl-btn");
+      
+        if (secondPara.style.display === "block") {
+          secondPara.style.display = "none";
+          readMoreBtn.textContent = "Load More";
+        } else {
+          secondPara.style.display = "block";
+          readMoreBtn.textContent = "Load Less";
+        }
+      }
+
+    // slider - youtube
+    /* event slider script in home 5 */
+    const event_slide_five = new Swiper(".event_slide_five", {
+        speed: 400,
+        loop: true,
+        slidesPerView: 3,
+        spaceBetween: 0,
+        autoplay: {
+            delay: 8000,
+            disableOnInteraction: false
+        },
+        breakpoints: {
+            1024: {
+                slidesPerView: 3,
+            },
+            780: {
+                slidesPerView: 2,
+            },
+            1279: {
+                slidesPerView: 4,
+            },
+        }
+    });
+    
+    // Define isMobileDevice() function
+    function isMobileDevice() {
+        return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+      }
+
+    if (isMobileDevice()) {
+        event_slide_five.autoplay.stop();
+      }
