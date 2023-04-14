@@ -388,6 +388,20 @@ function scrollFunction() {
         }
       }
 
+        //   Achievement
+    function achievements() {
+        const secondPara = document.getElementById("achievement");
+        const readMoreBtn = document.querySelector(".achievement-btn");
+      
+        if (secondPara.style.display === "block") {
+          secondPara.style.display = "none";
+          readMoreBtn.textContent = "Load More";
+        } else {
+          secondPara.style.display = "block";
+          readMoreBtn.textContent = "Load Less";
+        }
+      }
+
     // slider - youtube
     /* event slider script in home 5 */
     const event_slide_five = new Swiper(".event_slide_five", {

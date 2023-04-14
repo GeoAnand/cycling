@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cycling</title>
+    <title>Cycling Yogis</title>
     <link rel="icon" type="image/icon" href="assets/images/fav.svg">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/swiper.min.css">
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet" href="assets/css/magnific-popup.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/lightbox.min.css">
 </head>
 
 <body>
@@ -32,7 +33,7 @@
                     <div class="col-md-6">
                         <div class="cl-top-head-contact">
                             <ul>
-                                <li><i class="far fa-paper-plane"></i> info@yourmail.com</li>
+                                <li><i class="far fa-paper-plane"></i> ramanujar4u@gmail.com</li>
                                 <li><i class="fas fa-phone-alt"></i> 18009001010</li>
                             </ul>
                         </div>
@@ -221,7 +222,10 @@
                     <div class="col-md-4">
                         <div class="cl-team-box wow fadeInUp">
                             <div class="cl-team-img">
-                                <img src="assets/images/achievement/NCBT-book-cover.png" alt="image">
+                                <a href="assets/images/achievement/NCBT-book-cover.png" data-lightbox="example-1">
+                                    <img src="assets/images/achievement/NCBT-book-cover.png" alt="image">
+                                </a>
+                                
                             </div>
                             <div class="cl-team-content">
                                 <h2>Global Heritage of Madras</h2>
@@ -234,7 +238,9 @@
                     <div class="col-md-4">
                         <div class="cl-team-box wow fadeInUp" data-wow-delay="0.1s">
                             <div class="cl-team-img">
-                                <img src="assets/images/achievement/cycle-in-madras.png" alt="image">
+                                <a href="assets/images/achievement/cycle-in-madras.png" data-lightbox="example-1">
+                                    <img src="assets/images/achievement/cycle-in-madras.png" alt="image">
+                                </a>                                
                             </div>
                             <div class="cl-team-content">
                                 <h2>Medical Heritage Trails of Chennai </h2>
@@ -247,7 +253,9 @@
                     <div class="col-md-4">
                         <div class="cl-team-box wow fadeInUp" data-wow-delay="0.2s">
                             <div class="cl-team-img">
-                                <img src="assets/images/achievement/GHM.png" alt="image">
+                                <a href="assets/images/achievement/GHM.png" data-lightbox="example-1">
+                                    <img src="assets/images/achievement/GHM.png" alt="image">
+                                </a>                                
                             </div>
                             <div class="cl-team-content">
                                 <h2>North Chennai Bicycle Trails</h2>
@@ -260,7 +268,9 @@
                     <div class="col-md-4">
                         <div class="cl-team-box wow fadeInUp" data-wow-delay="0.3s">
                             <div class="cl-team-img">
-                                <img src="assets/images/achievement/GT.png" alt="image">
+                                <a href="assets/images/achievement/GT.png" data-lightbox="example-1">
+                                    <img src="assets/images/achievement/GT.png" alt="image">
+                                </a>                                
                             </div>
                             <div class="cl-team-content">
                                 <h2>George Town Book</h2>
@@ -273,7 +283,9 @@
                     <div class="col-md-4">
                         <div class="cl-team-box wow fadeInUp" data-wow-delay="0.3s">
                             <div class="cl-team-img">
-                                <img src="assets/images/achievement/CT.png" alt="image">
+                                <a href="assets/images/achievement/CT.png" data-lightbox="example-1">
+                                    <img src="assets/images/achievement/CT.png" alt="image">
+                                </a>                                
                             </div>
                             <div class="cl-team-content">
                                 <h2>Madras by Cycle 40Trails</h2>
@@ -286,7 +298,9 @@
                     <div class="col-md-4">
                         <div class="cl-team-box wow fadeInUp" data-wow-delay="0.3s">
                             <div class="cl-team-img">
-                                <img src="assets/images/achievement/MH.png" alt="image">
+                                <a href="assets/images/achievement/MH.png" data-lightbox="example-1">
+                                    <img src="assets/images/achievement/MH.png" alt="image">
+                                </a>                                
                             </div>
                             <div class="cl-team-content">
                                 <h2>Cycling in Madras (1877 - 1977)</h2>
@@ -295,6 +309,28 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <div class="hidden-div" id="achievement" style="display: none;">
+                        <div class="col-md-4">
+                            <div class="cl-team-box wow fadeInUp" data-wow-delay="0.3s">
+                                <div class="cl-team-img">
+                                    <a href="assets/images/achievement/OMR-Ecr.png" data-lightbox="example-1">
+                                        <img src="assets/images/achievement/OMR-Ecr.png" alt="image">
+                                    </a>                                    
+                                </div>
+                                <div class="cl-team-content">
+                                    <h2>OMR ECR Bicycle Trials</h2>
+                                    <div class="cl-team-hide-content">
+                                        <a href="about.html" class="cl-btn" style="border-radius: 50px;">Buy Now</a>                                    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="load-more-btn">
+                        <button class="achievement-btn" onclick="achievements()">Read More</button>
                     </div>
                 </div>
             </div>
@@ -378,19 +414,25 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="achievement-box">
-                            <img src="assets/images/achievement/other-activities-1.png">
+                            <a href="assets/images/achievement/other-activities-1.png" data-lightbox="example-1">
+                                <img src="assets/images/achievement/other-activities-1.png">
+                            </a>                            
                             <h5>Vintage Bicycle edition - 2022</h5>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="achievement-box">
-                            <img src="assets/images/achievement/other-activities-2.png">
+                            <a href="assets/images/achievement/other-activities-2.png" data-lightbox="example-1">
+                                <img src="assets/images/achievement/other-activities-2.png">
+                            </a>                            
                             <h5>Kids Heritage</h5>
                         </div>
                     </div>
                     <div class="col-md-4">
                         <div class="achievement-box">
-                            <img src="assets/images/achievement/other-activities-3.png">
+                            <a href="assets/images/achievement/other-activities-3.png" data-lightbox="example-1">
+                                <img src="assets/images/achievement/other-activities-3.png">
+                            </a>                            
                             <h5>Mylapore Festival - 2014</h5>
                         </div>
                     </div>
@@ -580,6 +622,7 @@
     <script src="assets/js/waypoints.min.js"></script>
     <script src="assets/js/scrollCue.min.js"></script>
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/lightbox-plus-jquery.min.js"></script>
 </body>
 
 
