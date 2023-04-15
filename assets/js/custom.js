@@ -33,6 +33,12 @@
             });
         },
         // loader end
+
+        // preloader
+        
+
+        // preloader end
+
         // products slider start
         products_slider: function () { 
             if($('.cl-products-slider').length > 0){

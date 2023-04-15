@@ -389,6 +389,10 @@ input:focus {
 
 .cl-heading p {
     margin-bottom: 0;
+    text-align: justify;
+}
+p{
+    text-align: justify;
 }
 
 .cl-product-box {
@@ -1918,7 +1922,7 @@ input::-webkit-inner-spin-button {
 
 .stats_number .stat_inner .stat_content {
     padding: 100px 100px 100px 50px;
-    background-image: url(../images/bg1.jpg);
+    background-image: url(../images/bg1.png);
     border-radius: 15px;
     background-size: cover;
     background-position: right top;
@@ -1951,7 +1955,7 @@ input::-webkit-inner-spin-button {
 }
 
 .stats_number .stat_inner .stat_content .counter_content i {
-    background-color: #d45d79;
+    background-color: #182c42;
     color: #fff;
     width: 60px;
     height: 60px;
@@ -1970,8 +1974,9 @@ input::-webkit-inner-spin-button {
 }
 
 .stats_number .stat_inner .stat_content .counter_content p {
-    color: #d45d79;
-    font-size: 15px
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
 }
 
 .stats_number .stat_inner .stat_img {
