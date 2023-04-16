@@ -2163,7 +2163,7 @@ input::-webkit-inner-spin-button {
 }
 
 .team_desc p {
-    color: #d45d79
+    color: #DB9C3D;
 }
 
 .team_desc::before {
@@ -3089,6 +3089,9 @@ li .cy_tl-item.dir-r:before {
   .event_inner{
     text-align: center;
   }
+  .header_svg path{
+    fill: #fff;
+  }
 /* end */
 
 /* custom-responsive */
@@ -3131,6 +3134,18 @@ li .cy_tl-item.dir-r:before {
 
     li .cy_tl-item {
         padding-right: 10px;
+    }
+    .stats_number .stat_inner .stat_content .counter_content {
+        border: none
+    }
+
+    .stats_number .stat_inner .stat_img .counter_boxbg {
+        position: relative;
+        width: 100%
+    }
+
+    .stats_number .stat_inner .stat_content {
+        padding: 60px
     }
 }
 
