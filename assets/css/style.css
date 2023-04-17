@@ -3092,6 +3092,14 @@ li .cy_tl-item.dir-r:before {
   .header_svg path{
     fill: #fff;
   }
+  .Packages-box img{
+    border-radius: 8px;
+    width: 100%;
+  }
+  .Packages-box h5{
+    padding: 15px 0 10px;
+    text-align: center;
+  }
 /* end */
 
 /* custom-responsive */
