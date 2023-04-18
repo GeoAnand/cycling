@@ -3105,10 +3105,18 @@ li .cy_tl-item.dir-r:before {
 /* custom-responsive */
 @media only screen and (max-width: 600px) {
     .slide_content h1 {
-        font-size: 22px;
+        font-size: 18px !important;
     }
     .swiper-slide{
         width: 100% !important;
+    }
+    .slide_content{
+        padding-top: 10%;
+        padding-bottom: 15%;
+    }
+    .cl-about-img{
+        text-align: center;
+        margin: auto;
     }
 }
 
