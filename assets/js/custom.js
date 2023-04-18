@@ -252,12 +252,12 @@ const para_slider = new Swiper('.para_slider', {
     slidesPerView: 5,
     loop: true,
     autoplay: {
-        delay: 5000,
+        delay: 7000,
         disableOnInteraction: false
     },
     breakpoints: {
         640: {
-            slidesPerView: 3,
+            slidesPerView: 1,
         },
         768: {
             slidesPerView: 4,
@@ -421,6 +421,9 @@ function scrollFunction() {
             disableOnInteraction: false
         },
         breakpoints: {
+            640:{
+                slidesPerView: 1,
+            },
             1024: {
                 slidesPerView: 3,
             },
@@ -434,10 +437,10 @@ function scrollFunction() {
     });
     
     // Define isMobileDevice() function
-    function isMobileDevice() {
-        return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
-      }
+    // function isMobileDevice() {
+    //     return (typeof window.orientation !== "undefined") || (navigator.userAgent.indexOf('IEMobile') !== -1);
+    //   }
 
-    if (isMobileDevice()) {
-        event_slide_five.autoplay.stop();
-      }
+    // if (isMobileDevice()) {
+    //     event_slide_five.autoplay.stop();
+    //   }
