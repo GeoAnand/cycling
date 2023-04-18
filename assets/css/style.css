@@ -1520,8 +1520,8 @@ input::-webkit-inner-spin-button {
 }
 
 .slide_content {
-    padding-top: 16%;
-    padding-bottom: 10%;
+    padding-top: 22%;
+    padding-bottom: 3%;
     position: relative
 }
 
@@ -2977,11 +2977,11 @@ li .cy_tl-item.dir-r:before {
             transition-delay: 300ms;
   }
   
-  .slide_content {
-    padding-top: 16%;
-    padding-bottom: 10%;
+  /* .slide_content {
+    padding-top: 22%;
+    padding-bottom: 3%;
     position: relative;
-  }
+  } */
   
   .slide_content h1 {
     color: #fff;
@@ -3067,7 +3067,7 @@ li .cy_tl-item.dir-r:before {
     text-align: center;
     line-height: 30px;
     margin-top: -15px;
-    background: #24A19C;
+    background: #DB9C3D;
     border-radius: 5px;
     font-size: 12px;
     -webkit-transform: translateX(0);
@@ -3078,7 +3078,7 @@ li .cy_tl-item.dir-r:before {
   }
   
   .rdn_slider .swiper-nav-btn i:hover {
-    color: #24A19C;
+    color: #DB9C3D;
     background: #fff;
   }
   

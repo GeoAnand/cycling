@@ -233,10 +233,11 @@ const para_slider = new Swiper('.para_slider', {
     parallax: true,
     simulateTouch: false,
     preventInteractionOnTransition: true,
-    autoplay: {
-        delay: 5000,
-        disableOnInteraction: false
-    },
+    // autoplay: {
+    //     delay: 5000,
+    //     disableOnInteraction: false
+    // },
+    autoplay:false,
 
     // If we need pagination
     navigation: {
