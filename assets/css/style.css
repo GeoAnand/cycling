@@ -1520,7 +1520,7 @@ input::-webkit-inner-spin-button {
 }
 
 .slide_content {
-    padding-top: 22%;
+    padding-top: 28%;
     padding-bottom: 3%;
     position: relative
 }
@@ -3111,8 +3111,8 @@ li .cy_tl-item.dir-r:before {
         width: 100% !important;
     }
     .slide_content{
-        padding-top: 10%;
-        padding-bottom: 15%;
+        padding-top: 30%;
+        padding-bottom: 3%;
     }
     .cl-about-img{
         text-align: center;
