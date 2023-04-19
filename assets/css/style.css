@@ -3100,6 +3100,9 @@ li .cy_tl-item.dir-r:before {
     padding: 15px 0 10px;
     text-align: center;
   }
+  .cl-contact-detail ul li a{
+    color: #fff;
+  }
 /* end */
 
 /* custom-responsive */
