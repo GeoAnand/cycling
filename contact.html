@@ -6,6 +6,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:image" content="https://cyclingyogis.in/cyclingyogis.jpg" />
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
     <title>Cycling Yogis</title>
     <link rel="icon" type="image/icon" href="assets/images/fav.svg">
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -224,14 +228,16 @@
                             <!-- <p>lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod</p> -->
                         </div>
                         <div class="cl-contact-form">
-                            <form>
-                                <input type="text" placeholder="Name" name="full_name" id="full_name" class="require"/>
-                                <input type="text" placeholder="Email" name="email" id="email" class="require" data-valid="email" data-error="Email should be valid."/>
-                                <textarea placeholder="Message" name="message" id="message"></textarea>
-                                <button type="button" class="cl-btn submitForm">Submit</button>
+                            <form action="form/contact.php" method="POST">
+                                <input type="text" placeholder="Name" name="name" id="full_name" class="require" required/>
+                                <input type="text" placeholder="Email" name="email" id="email" class="require" data-valid="email" data-error="Email should be valid." required/>
+                                <textarea placeholder="Message" name="usermessage" id="message" required></textarea>
+                                <button type="submit" class="cl-btn submitForm" id="submitBtn">Submit</button>
                                 <div class="response"></div>
                             </form>
+                            <!--<p id="submittingMessage" style="display:none;">Form is being submitted...</p>-->
                         </div>
+                        
                     </div>
                     <div class="col-xl-6 col-md-12">
                         <div class="cl-contact-detail">
