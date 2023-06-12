@@ -455,7 +455,7 @@ const event_slide_five = new Swiper(".event_slide_five", {
     var carousel = function () {
         $('.featured-carousel').owlCarousel({
             loop: true,
-            autoplay: true,
+            autoplay: false,
             margin: 30,
             animateOut: 'fadeOut',
             animateIn: 'fadeIn',
@@ -463,7 +463,7 @@ const event_slide_five = new Swiper(".event_slide_five", {
             dots: true,
             autoplayHoverPause: false,
             items: 1,
-            navText: ["<p><small>Prev</small><span class='ion-ios-arrow-round-back'></span></p>", "<p><small>Next</small><span class='ion-ios-arrow-round-forward'></span></p>"],
+            navText: ["<p><small></small><span class='ion-ios-arrow-round-back'></span></p>", "<p><small></small><span class='ion-ios-arrow-round-forward'></span></p>"],
             responsive: {
                 0: {
                     items: 1
